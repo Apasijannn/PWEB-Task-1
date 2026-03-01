@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ========================
+   COLOR & FONT VARIABLES
+======================== */
+:root {
+    --base-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #E8E2DB;       /* page background */
+    --secondary-color: #F7F8F0;     /* main card color */
+    --accent-color: #c8b87a;        /* button / accent */
+    --nav-background: #DBCEA5;      /* nav background */
+    --divider-color: #DBCEA5;
+}
+
+/* ========================
+   BASIC RESET
+======================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: var(--text-color);
+}
+
+body {
+    padding: 1em;
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+/* ========================
+   NAVIGATION
+======================== */
+nav {
+    padding: 1.25em 2em;
+    background-color: var(--nav-background);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1.5em;
+    flex-wrap: wrap;
+}
+
+/* Name / logo on the left */
+nav li:first-child {
+    margin-right: auto;
+    font-family: "Limelight", sans-serif;
+    font-size: 2rem;
+}
+
+/* Social icons */
+nav .fa-brands {
+    font-size: 1.6rem;
+    transition: opacity 0.2s;
+}
+
+nav .fa-brands:hover {
+    opacity: 0.6;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* ========================
+   MAIN CARD
+======================== */
+.main-card {
+    margin: 2em auto;
+    width: min(100%, 75em);
+    background-color: var(--secondary-color);
+    border-radius: 1em;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* ========================
+   HERO / INTRODUCTION
+======================== */
+.hero-section {
+    padding: 3em 2em;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+.main-card img {
+    border-radius: 1em;
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+}
+
+.text-container {
+    flex: 0 1 34em;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+}
+
+.text-container p {
+    font-size: 1.1rem;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.65em 1.5em;
+    background-color: var(--accent-color);
+    color: var(--base-color);
+    border-radius: 0.5em;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #b0a060;
+}
+
+/* ========================
+   SECTION DIVIDER
+======================== */
+.section-divider {
+    border: none;
+    border-top: 2px solid var(--divider-color);
+    margin: 0 2em;
+}
+
+/* ========================
+   PROJECTS SECTION
+======================== */
+.projects-section {
+    padding: 2.5em 2em;
+}
+
+.projects-section h2 {
+    font-size: 2rem;
+    margin-bottom: 0.25em;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5em;
+}
+
+/* Simple project list */
+.projects-list {
+    list-style: none;
+    padding: 0;
+}
+
+.projects-list li {
+    padding: 1.25em 0;
+    border-bottom: 1px solid var(--divider-color);
+}
+
+.projects-list li:last-child {
+    border-bottom: none;
+}
+
+.projects-list h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.35em;
+}
+
+.project-year {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #888;
+}
+
+.projects-list p {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+/* ========================
+   FUTURE PLANS SECTION
+======================== */
+.plans-section {
+    padding: 2.5em 2em;
+}
+
+.plans-section h2 {
+    font-size: 2rem;
+    margin-bottom: 0.25em;
+}
+
+.plans-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+    margin-top: 1.5em;
+}
+
+.plan-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.plan-icon {
+    font-size: 1.75rem;
+    line-height: 1;
+    flex-shrink: 0;
+    margin-top: 0.1em;
+}
+
+.plan-item h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 0.2em;
+}
+
+.plan-item p {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+/* ========================
+   FOOTER
+======================== */
+footer {
+    text-align: center;
+    padding: 1.5em 2em;
+    font-size: 0.9rem;
+    color: #888;
+    background-color: var(--nav-background);
+}
