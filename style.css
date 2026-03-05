@@ -130,11 +130,11 @@ nav .fa-brands:hover {
 
 .hero-image-wrap img {
     display: block;
-    width: 240px;
-    height: 310px;
+    width: 220px;
+    height: 340px;
     border-radius: 1em;
     object-fit: cover;
-    object-position: center top;
+    object-position: center 15%;
     max-width: 100%;
     box-shadow: 8px 8px 0 var(--nav-bg);
 }
