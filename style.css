@@ -782,7 +782,6 @@ nav .fa-brands:hover {
     font-family: 'DM Sans', sans-serif;
 }
 
-/* Navbar */
 .gp-nav {
     display: flex;
     align-items: center;
@@ -809,7 +808,6 @@ nav .fa-brands:hover {
 .gp-nl { height: .2em; width: .65em; background: var(--gp-border); border-radius: .1em; }
 .gp-nl--active { background: var(--gp-accent); width: .8em; }
 
-/* Hero */
 .gp-hero {
     display: flex;
     align-items: center;
@@ -832,7 +830,7 @@ nav .fa-brands:hover {
 .gp-ht-title span { display: block; height: .38em; background: var(--gp-text); border-radius: .12em; }
 
 .gp-ht-desc { display: flex; flex-direction: column; gap: .14em; margin-top: .15em; }
-.gp-ht-desc span  { display: block; height: .17em; background: var(--gp-border); border-radius: .08em; width: 100%; }
+.gp-ht-desc span { display: block; height: .17em; background: var(--gp-border); border-radius: .08em; width: 100%; }
 
 .gp-ht-cta {
     margin-top: .2em;
@@ -841,7 +839,6 @@ nav .fa-brands:hover {
     border-radius: .24em;
 }
 
-/* Hero avatars */
 .gp-hero-avatars {
     display: flex;
     flex-direction: column;
@@ -850,10 +847,7 @@ nav .fa-brands:hover {
     flex-shrink: 0;
 }
 
-.gp-av-stack {
-    display: flex;
-    gap: .25em;
-}
+.gp-av-stack { display: flex; gap: .25em; }
 
 .gp-av {
     display: flex;
@@ -882,11 +876,7 @@ nav .fa-brands:hover {
 .gp-av--4 .gp-av-head { background: var(--gp-av4); }
 .gp-av--4 .gp-av-body { background: color-mix(in srgb, var(--gp-av4) 60%, #333); }
 
-.gp-member-count {
-    display: flex;
-    align-items: center;
-    gap: .2em;
-}
+.gp-member-count { display: flex; align-items: center; gap: .2em; }
 
 .gp-mc-num {
     font-size: .55em;
@@ -902,7 +892,6 @@ nav .fa-brands:hover {
     border-radius: .08em;
 }
 
-/* Members section */
 .gp-members {
     padding: .4em .75em .6em;
     background: var(--gp-bg2);
@@ -968,7 +957,7 @@ nav .fa-brands:hover {
 /* ── Plan Cards ── */
 .plans-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(13em, 1fr));
     gap: 1em;
     margin-bottom: 1.5em;
 }
